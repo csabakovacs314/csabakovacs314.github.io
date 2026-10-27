@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NACHO privacy policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>NACHO privacy policy</h1>
+<p class="tagline">Last updated: 27 October 2026</p>
+
+<p>NACHO is a desktop app for Windows and Linux. It runs on your own computer. It has no server and no account of its own, and its maker receives no data from it.</p>
+
+<h2>Pictures and files on your computer</h2>
+<p>NACHO reads the files you give it and writes smaller copies to a folder on your computer (Pictures\Docs-Ready unless you choose another). Nothing is uploaded, except as described under Google Docs below.</p>
+
+<h2>Google Docs</h2>
+<p>NACHO uses your Google account only when you choose "Shrink a Google Doc" and sign in. You sign in on Google's own page in your browser; NACHO never sees your password.</p>
+<p>NACHO asks Google for one permission: <strong>"See, edit, create and delete only the specific Google Drive files that you use with this app"</strong> (<code>drive.file</code>). That covers:</p>
+<ul>
+<li>the Google Doc you choose in Google's file picker, which NACHO reads and in which it replaces each picture with a smaller copy, keeping its place and size; and</li>
+<li>temporary picture files NACHO creates in your Drive. Each is shared as "anyone with the link" for a few seconds, so Google Docs can copy it into your Doc, and then deleted.</li>
+</ul>
+<p>NACHO cannot see any other file in your Drive.</p>
+
+<h2>How the data is handled</h2>
+<ul>
+<li>The pictures of the Doc you choose are downloaded to your computer, made smaller there, and put back into the same Doc.</li>
+<li>If you choose (it is on by default), copies of the original pictures are kept on your computer, in Docs-Ready\Google Docs originals. You can delete them at any time.</li>
+<li>Your sign-in (a refresh token) is stored only on your computer: encrypted for your Windows user, or on Linux in a file only your user can read. Signing out in NACHO deletes it and asks Google to revoke it.</li>
+<li>No data from your Google account is sent anywhere else, sold, shared, used for advertising, or used to train any AI or machine-learning model. NACHO keeps no other copy of your Docs.</li>
+<li>NACHO's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+</ul>
+<p>You can remove NACHO's access at any time at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</p>
+
+<h2>Update check</h2>
+<p>Once a day (you can turn it off in More options) NACHO asks GitHub's public API whether a newer release exists. The request carries only "NACHO/&lt;version&gt;" as its user agent.</p>
+
+<h2>Contact</h2>
+<p>Questions: <a href="https://github.com/csabakovacs314/NACHO/issues">github.com/csabakovacs314/NACHO/issues</a>.</p>
+
+<footer><a href="index.html">NACHO home</a></footer>
+</main>
+</body>
+</html>
