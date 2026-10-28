@@ -5,28 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NACHO: Docs-ready pictures</title>
 <meta name="description" content="NACHO is a free Windows and Linux app that makes pictures smaller for Google Docs, also inside a Google Doc you choose.">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<h1>NACHO</h1>
+<header class="brand"><img src="logo.svg" alt="" width="64" height="64"><h1>NACHO</h1></header>
 <p class="tagline">Normalise, Adjust, Compress, Hand Over. A free app for Windows and Linux.</p>
 
 <p>Google Docs gets slow when it is full of big photos. NACHO makes pictures smaller so they look the same on the page but take a fraction of the space.</p>
 
+<div class="card highlight">
+<h2>Shrink a whole Google Doc, keep the original safe</h2>
+<p>Choose a Doc in Google's own file picker. NACHO checks every picture first and shows what it would do. Then, by default, it puts the smaller pictures into <strong>a new copy of the Doc</strong>, in the same Drive folder, so your original stays exactly as it is. Each picture keeps its place, size and wrapping. If you prefer, NACHO can change the Doc itself instead, keeping its link, comments, sharing and version history.</p>
+<p>A real 410-page book with 251 photos went from 524 MB to 39 MB.</p>
+<p><a class="button" href="https://github.com/csabakovacs314/NACHO/releases/latest">Download NACHO</a></p>
+</div>
+
+<h2>How it looks</h2>
+<p class="note">Screenshots from NACHO's own self-test, with a sample Doc and a test account.</p>
+<figure>
+<img src="img/start.png" width="1240" height="800" alt="NACHO start screen: Pictures and files on the left, A whole Google Doc on the right with three steps and a Choose a Google Doc button" loading="lazy">
+<figcaption>NACHO opens with both ways in: single pictures and files, or a whole Google Doc.</figcaption>
+</figure>
+<div class="pair">
+<figure>
+<img src="img/google-decide.png" width="704" height="821" alt="Step 3, Decide: the Doc's pictures go from 19.1 MB to 587 KB; choose Into a new copy (recommended) or Into this Doc" loading="lazy">
+<figcaption>Step 3: see the size before and after, then choose where the smaller pictures go. Nothing in Google has changed yet.</figcaption>
+</figure>
+<figure>
+<img src="img/google-done.png" width="720" height="860" alt="Step 5, Done: Your smaller copy is ready, 96% smaller; the original is marked not touched" loading="lazy">
+<figcaption>Step 5: the smaller copy is ready and the original is not touched.</figcaption>
+</figure>
+</div>
+<figure>
+<img src="img/results.png" width="1224" height="761" alt="NACHO results: each picture as a card with the old size struck through and the new size, with a page-fit preview" loading="lazy">
+<figcaption>Single pictures, Word documents and PDFs: smaller copies, the original never changes.</figcaption>
+</figure>
+
 <ul>
 <li><strong>Single pictures:</strong> drop a photo or screenshot on NACHO and it makes a small, Docs-ready copy. Your original file is never changed.</li>
-<li><strong>A whole Google Doc:</strong> choose a Doc and NACHO makes every picture in it smaller and puts it back in the same place. The Doc keeps its link, text, comments, sharing and version history.</li>
 <li><strong>Word documents and PDFs:</strong> every picture inside is shrunk at once.</li>
 <li>English, Spanish and Hungarian.</li>
 </ul>
 
-<p><a class="button" href="https://github.com/csabakovacs314/NACHO/releases/latest">Download NACHO</a></p>
+<p><a class="button" href="https://github.com/csabakovacs314/NACHO/releases/latest">Download NACHO</a> <a href="https://github.com/csabakovacs314/NACHO/blob/main/docs/README.md">More screenshots</a></p>
 
 <h2>How NACHO uses your Google account</h2>
 <div class="card">
 <p>Only when you use "Shrink a Google Doc". You sign in with Google in your browser and choose the Doc in Google's own file picker. NACHO can then open <strong>only the files you choose</strong> (and the temporary files it creates itself). It cannot see any other file in your Drive or any other Doc.</p>
-<p>The pictures are made smaller on your own computer and put back into the same Doc. Nothing is sent anywhere else. Details: <a href="privacy.html">privacy policy</a>.</p>
+<p>The pictures are made smaller on your own computer and put into a copy of the Doc that Google makes in your Drive (or into the Doc itself, if you choose). Nothing is sent anywhere else. Details: <a href="privacy.html">privacy policy</a>.</p>
 </div>
 
 <nav aria-label="More about NACHO">
