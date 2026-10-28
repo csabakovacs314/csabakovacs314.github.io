@@ -19,14 +19,15 @@
 <h2>Shrink a whole Google Doc, keep the original safe</h2>
 <p>Choose a Doc in Google's own file picker. NACHO checks every picture first and shows what it would do. Then, by default, it puts the smaller pictures into <strong>a new copy of the Doc</strong>, in the same Drive folder, so your original stays exactly as it is. Each picture keeps its place, size and wrapping. If you prefer, NACHO can change the Doc itself instead, keeping its link, comments, sharing and version history.</p>
 <p>A real 410-page book with 251 photos went from 524 MB to 39 MB.</p>
+<p><strong>New in 0.12.0: Word files too.</strong> The same steps for a .docx on your computer or in Google Drive: a smaller copy next to the original by default, or the file itself, with the original saved first and a Restore original button.</p>
 <p><a class="button" href="https://github.com/csabakovacs314/NACHO/releases/latest">Download NACHO</a></p>
 </div>
 
 <h2>How it looks</h2>
 <p class="note">Screenshots from NACHO's own self-test, with a sample Doc and a test account.</p>
 <figure>
-<img src="img/start.png" width="1240" height="800" alt="NACHO start screen: Pictures and files on the left, A whole Google Doc on the right with three steps and a Choose a Google Doc button" loading="lazy">
-<figcaption>NACHO opens with both ways in: single pictures and files, or a whole Google Doc.</figcaption>
+<img src="img/start.png" width="1240" height="800" alt="NACHO start screen: Pictures and PDFs on the left, A whole document on the right with three steps, Choose a Google Doc and Choose a Word file" loading="lazy">
+<figcaption>NACHO opens with both ways in: single pictures and PDFs, or a whole document (a Google Doc or a Word file).</figcaption>
 </figure>
 <div class="pair">
 <figure>
@@ -38,14 +39,25 @@
 <figcaption>Step 5: the smaller copy is ready and the original is not touched.</figcaption>
 </figure>
 </div>
+<div class="pair">
+<figure>
+<img src="img/word-decide.png" width="704" height="821" alt="Word file, step 3: the file gets 96% smaller; Into this file selected, the original is saved first" loading="lazy">
+<figcaption>A Word file, step 3: a new copy next to the original, or the file itself with the original saved first.</figcaption>
+</figure>
+<figure>
+<img src="img/word-done.png" width="704" height="821" alt="Word file, step 5: Team handbook.docx is smaller, with Restore original" loading="lazy">
+<figcaption>Step 5: the file is smaller, and Restore original puts the old one back.</figcaption>
+</figure>
+</div>
 <figure>
 <img src="img/results.png" width="1224" height="761" alt="NACHO results: each picture as a card with the old size struck through and the new size, with a page-fit preview" loading="lazy">
-<figcaption>Single pictures, Word documents and PDFs: smaller copies, the original never changes.</figcaption>
+<figcaption>Single pictures and PDFs: smaller copies, the original never changes.</figcaption>
 </figure>
 
 <ul>
 <li><strong>Single pictures:</strong> drop a photo or screenshot on NACHO and it makes a small, Docs-ready copy. Your original file is never changed.</li>
-<li><strong>Word documents and PDFs:</strong> every picture inside is shrunk at once.</li>
+<li><strong>Word files:</strong> every picture inside is shrunk at once, on your computer or in Google Drive.</li>
+<li><strong>PDFs:</strong> pictures sharper than needed are scaled down; text, links and forms stay.</li>
 <li>English, Spanish and Hungarian.</li>
 </ul>
 
@@ -53,7 +65,7 @@
 
 <h2>How NACHO uses your Google account</h2>
 <div class="card">
-<p>Only when you use "Shrink a Google Doc". You sign in with Google in your browser and choose the Doc in Google's own file picker. NACHO can then open <strong>only the files you choose</strong> (and the temporary files it creates itself). It cannot see any other file in your Drive or any other Doc.</p>
+<p>Only when you use "Shrink a Google Doc" or choose a Word file in Google Drive. You sign in with Google in your browser and choose the Doc in Google's own file picker. NACHO can then open <strong>only the Docs and files you choose</strong> (and the temporary files it creates itself). It cannot see any other file in your Drive or any other Doc.</p>
 <p>The pictures are made smaller on your own computer and put into a copy of the Doc that Google makes in your Drive (or into the Doc itself, if you choose). Nothing is sent anywhere else. Details: <a href="privacy.html">privacy policy</a>.</p>
 </div>
 
